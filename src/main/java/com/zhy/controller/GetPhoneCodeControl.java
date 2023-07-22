@@ -46,7 +46,7 @@ public class GetPhoneCodeControl {
     /**
      * 阿里云短信发送模板
      */
-    private static final String SIGN_NAME = "张海洋ocean";
+    private static final String SIGN_NAME = "程序猿何汉叁";
 
     @PostMapping(value = "/getCode", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public String getAuthCode(@RequestParam("phone") String phone,
@@ -61,11 +61,11 @@ public class GetPhoneCodeControl {
         String msgCode;
         //注册的短信模板
         if(REGISTER.equals(sign)){
-            msgCode = "SMS_136394413";
+            msgCode = "SMS_461850139";
         }
         //改密码的短信模板
         else {
-            msgCode = "SMS_139982667";
+            msgCode = "SMS_461825156";
         }
 
         try {
